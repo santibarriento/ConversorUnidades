@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "csanti.barriento.conversorunidades.app-mergeDebugResources-26:/values-en-rUS/values-en-rUS.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\santi\\Desktop\\ConversorUnidades\\app\\src\\main\\res\\values-en-rUS\\strings.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endColumns": "51",
+                        "endOffsets": "104"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "51",
+                        "endOffsets": "102"
+                    }
+                }
+            ]
+        }
+    ]
+}

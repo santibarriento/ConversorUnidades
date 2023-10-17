@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Longitud">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="137dp"
+        android:layout_marginEnd="137dp"
+        android:text="Conversor de longitud"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/yarda1"
+        app:layout_constraintEnd_toStartOf="@+id/messi1"
+        app:layout_constraintStart_toStartOf="@+id/km1"
+        app:layout_constraintTop_toBottomOf="@+id/mil1" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/messi2"
+        app:layout_constraintEnd_toStartOf="@+id/yarda2"
+        app:layout_constraintStart_toStartOf="@+id/km2"
+        app:layout_constraintTop_toTopOf="@+id/mil2" />
+
+    <TextView
+        android:id="@+id/resultado_longitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.734" />
+
+    <Button
+        android:id="@+id/calcular_long"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="calcular"
+        android:text="Calcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.638" />
+
+    <EditText
+        android:id="@+id/numerousertemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.559" />
+
+    <RadioGroup
+        android:layout_width="136dp"
+        android:layout_height="209dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.204">
+
+        <RadioButton
+            android:id="@+id/km1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kilometro" />
+
+        <RadioButton
+            android:id="@+id/mil1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Milla" />
+
+        <RadioButton
+            android:id="@+id/yarda1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yarda" />
+
+        <RadioButton
+            android:id="@+id/messi1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pulgada" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="137dp"
+        android:layout_height="184dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.195">
+
+        <RadioButton
+            android:id="@+id/km2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kilometro" />
+
+        <RadioButton
+            android:id="@+id/mil2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Milla" />
+
+        <RadioButton
+            android:id="@+id/yarda2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yarda" />
+
+        <RadioButton
+            android:id="@+id/messi2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pulgada" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
